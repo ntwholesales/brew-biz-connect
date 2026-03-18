@@ -15,15 +15,15 @@ import cafeBustelo from "@/assets/cafe-bustelo.png";
 import motherParkers from "@/assets/mother-parkers.png";
 
 const products = [
+  { image: peetsDarkRoast, name: "Major Dickason's Decaf", brand: "Peet's Coffee", size: "10.5oz", category: "Ground Coffee" },
+  { image: cafeBustelo, name: "Espresso Ground Coffee", brand: "Café Bustelo", size: "283g", category: "Ground Coffee" },
+  { image: motherParkers, name: "Original Café Blend", brand: "Mother Parkers", size: "925g", category: "Ground Coffee" },
   { image: nescafeClassic, name: "Nescafé Classic", brand: "Nescafé", size: "200g", category: "Instant Coffee" },
   { image: coffeemate, name: "Coffee-Mate Original", brand: "Nestlé", size: "325g", category: "Creamer" },
   { image: kencoSmooth, name: "Kenco Smooth", brand: "Kenco", size: "200g", category: "Instant Coffee" },
   { image: carvetiiFilter, name: "Filter Selection Box", brand: "Carvetii", size: "3 × 250g", category: "Filter Coffee" },
   { image: nescafeAzera, name: "Azera Intenso", brand: "Nescafé", size: "100g", category: "Premium Instant" },
   { image: lavazzaEspresso, name: "Espresso Italiano", brand: "Lavazza", size: "1kg", category: "Whole Bean" },
-  { image: peetsDarkRoast, name: "Major Dickason's Decaf", brand: "Peet's Coffee", size: "10.5oz", category: "Ground Coffee" },
-  { image: cafeBustelo, name: "Espresso Ground Coffee", brand: "Café Bustelo", size: "283g", category: "Ground Coffee" },
-  { image: motherParkers, name: "Original Café Blend", brand: "Mother Parkers", size: "925g", category: "Ground Coffee" },
 ];
 
 const container = {
