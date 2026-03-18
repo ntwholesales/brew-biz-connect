@@ -1,12 +1,18 @@
 import { motion } from "framer-motion";
 import ProductCard from "./ProductCard";
 
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
+
 import nescafeClassic from "@/assets/nescafe-classic.png";
 import coffeemate from "@/assets/coffeemate.png";
 import kencoSmooth from "@/assets/kenco-smooth.png";
 import carvetiiFilter from "@/assets/carvetii-filter.png";
 import nescafeAzera from "@/assets/nescafe-azera.png";
 import lavazzaEspresso from "@/assets/lavazza-espresso.png";
+import peetsDarkRoast from "@/assets/peets-dark-roast.png";
+import cafeBustelo from "@/assets/cafe-bustelo.png";
+import motherParkers from "@/assets/mother-parkers.png";
 
 const products = [
   { image: nescafeClassic, name: "Nescafé Classic", brand: "Nescafé", size: "200g", category: "Instant Coffee" },
@@ -15,6 +21,9 @@ const products = [
   { image: carvetiiFilter, name: "Filter Selection Box", brand: "Carvetii", size: "3 × 250g", category: "Filter Coffee" },
   { image: nescafeAzera, name: "Azera Intenso", brand: "Nescafé", size: "100g", category: "Premium Instant" },
   { image: lavazzaEspresso, name: "Espresso Italiano", brand: "Lavazza", size: "1kg", category: "Whole Bean" },
+  { image: peetsDarkRoast, name: "Major Dickason's Decaf", brand: "Peet's Coffee", size: "10.5oz", category: "Ground Coffee" },
+  { image: cafeBustelo, name: "Espresso Ground Coffee", brand: "Café Bustelo", size: "283g", category: "Ground Coffee" },
+  { image: motherParkers, name: "Original Café Blend", brand: "Mother Parkers", size: "925g", category: "Ground Coffee" },
 ];
 
 const container = {
@@ -25,7 +34,12 @@ const container = {
   },
 };
 
+const INITIAL_COUNT = 6;
+
 const ProductGrid = () => {
+  const [showAll, setShowAll] = useState(false);
+  const visible = showAll ? products : products.slice(0, INITIAL_COUNT);
+
   return (
     <section id="products" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,10 +57,22 @@ const ProductGrid = () => {
           viewport={{ once: true, margin: "-50px" }}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          {products.map((product) => (
+          {visible.map((product) => (
             <ProductCard key={product.name} {...product} />
           ))}
         </motion.div>
+
+        {!showAll && (
+          <div className="mt-10 text-center">
+            <button
+              onClick={() => setShowAll(true)}
+              className="inline-flex items-center gap-2 px-6 h-11 rounded-full bg-secondary text-secondary-foreground text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+            >
+              Check More Products
+              <ChevronDown className="w-4 h-4" />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
