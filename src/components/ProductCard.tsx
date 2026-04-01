@@ -35,7 +35,7 @@ const ProductCard = ({ image, name, brand, size, category }: ProductCardProps) =
           <span className="tabular-nums font-medium">{size}</span>
         </div>
         <a
-          href="mailto:info@ntwholesales.com?subject=Wholesale Inquiry: ${name}"
+          href={`mailto:info@ntwholesales.com?subject=Wholesale Inquiry: ${name}`}
           className="block text-center mt-3 h-9 leading-9 rounded-full bg-secondary text-secondary-foreground text-xs font-semibold hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
         >
           Inquire for Pricing

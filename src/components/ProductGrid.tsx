@@ -4,26 +4,20 @@ import ProductCard from "./ProductCard";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
-import nescafeClassic from "@/assets/nescafe-classic.png";
-import coffeemate from "@/assets/coffeemate.png";
-import kencoSmooth from "@/assets/kenco-smooth.png";
-import carvetiiFilter from "@/assets/carvetii-filter.png";
-import nescafeAzera from "@/assets/nescafe-azera.png";
-import lavazzaEspresso from "@/assets/lavazza-espresso.png";
-import peetsDarkRoast from "@/assets/peets-dark-roast.png";
-import cafeBustelo from "@/assets/cafe-bustelo.png";
-import motherParkers from "@/assets/mother-parkers.png";
+import elfLotto from "@/assets/elf-lotto.png";
+import logoToysGames from "@/assets/logo-toys-games.png";
+import logoBoardGameDisney from "@/assets/logo-board-game-disney.png";
+import monopoly from "@/assets/monopoly.png";
+import footballTable from "@/assets/football-table.png";
+import dontPanic from "@/assets/dont-panic.png";
 
 const products = [
-  { image: peetsDarkRoast, name: "Major Dickason's Decaf", brand: "Peet's Coffee", size: "10.5oz", category: "Ground Coffee" },
-  { image: cafeBustelo, name: "Espresso Ground Coffee", brand: "Café Bustelo", size: "283g", category: "Ground Coffee" },
-  { image: motherParkers, name: "Original Café Blend", brand: "Mother Parkers", size: "925g", category: "Ground Coffee" },
-  { image: nescafeClassic, name: "Nescafé Classic", brand: "Nescafé", size: "200g", category: "Instant Coffee" },
-  { image: coffeemate, name: "Coffee-Mate Original", brand: "Nestlé", size: "325g", category: "Creamer" },
-  { image: kencoSmooth, name: "Kenco Smooth", brand: "Kenco", size: "200g", category: "Instant Coffee" },
-  { image: carvetiiFilter, name: "Filter Selection Box", brand: "Carvetii", size: "3 × 250g", category: "Filter Coffee" },
-  { image: nescafeAzera, name: "Azera Intenso", brand: "Nescafé", size: "100g", category: "Premium Instant" },
-  { image: lavazzaEspresso, name: "Espresso Italiano", brand: "Lavazza", size: "1kg", category: "Whole Bean" },
+  { image: monopoly, name: "Monopoly Classic", brand: "Hasbro Gaming", size: "Ages 8+", category: "Board Games" },
+  { image: logoBoardGameDisney, name: "The Logo Board Game – Disney Edition", brand: "Spin Master", size: "Ages 6+", category: "Board Games" },
+  { image: logoToysGames, name: "Logo Toys & Games Mini", brand: "Drumond Park", size: "Ages 8+", category: "Mini Games" },
+  { image: elfLotto, name: "Elf Lotto", brand: "Orchard Toys", size: "Ages 3–6", category: "Kids Games" },
+  { image: footballTable, name: "Tabletop Football", brand: "Sport Squad", size: "51cm", category: "Action Toys" },
+  { image: dontPanic, name: "Don't Panic!", brand: "Ideal Games", size: "Ages 7+", category: "Party Games" },
 ];
 
 const container = {
@@ -46,7 +40,7 @@ const ProductGrid = () => {
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-foreground leading-snug">Product Catalogue</h2>
           <p className="text-[15px] text-muted-foreground mt-2">
-            Bulk quantities available across all SKUs. Contact us for bespoke pricing.
+            Bulk quantities available across all lines. Contact us for trade pricing.
           </p>
         </div>
 
@@ -62,7 +56,7 @@ const ProductGrid = () => {
           ))}
         </motion.div>
 
-        {!showAll && (
+        {!showAll && products.length > INITIAL_COUNT && (
           <div className="mt-10 text-center">
             <button
               onClick={() => setShowAll(true)}

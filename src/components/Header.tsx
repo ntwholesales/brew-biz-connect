@@ -7,7 +7,6 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="border-b border-border/40">
-        {/* Top bar */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between text-[13px] text-muted-foreground">
           <div className="hidden sm:flex items-center gap-5">
             <a href="mailto:info@ntwholesales.com" className="flex items-center gap-1.5 hover:text-foreground transition-colors">
@@ -19,11 +18,10 @@ const Header = () => {
               +44 7709 537 486
             </a>
           </div>
-          <span className="hidden sm:block">Wholesale Coffee Distribution — UK</span>
+          <span className="hidden sm:block">Wholesale Toys & Games Distribution — UK</span>
         </div>
       </div>
 
-      {/* Main nav */}
       <div className="border-b border-border/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
           <a href="/" className="text-xl font-bold tracking-tight text-foreground">
