@@ -10,7 +10,7 @@ const Contact = () => {
               Get in Touch
             </h2>
             <p className="text-[15px] text-muted-foreground mt-3 leading-relaxed max-w-md">
-              Ready to set up a wholesale account? Contact our team for pricing, delivery schedules, and product availability.
+              Ready to set up a trade account? Contact our team for pricing, delivery schedules, and product availability across our full toy and games range.
             </p>
 
             <div className="mt-8 space-y-4">

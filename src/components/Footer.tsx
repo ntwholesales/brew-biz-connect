@@ -10,7 +10,7 @@ const Footer = () => {
               NT <span className="text-primary">Wholesales</span>
             </span>
             <p className="text-[13px] text-muted-foreground mt-2 leading-relaxed max-w-xs">
-              Commercial coffee distribution, scaled for UK hospitality and retail.
+              Wholesale toys & games distribution, built for UK retailers and toy shops.
             </p>
           </div>
 

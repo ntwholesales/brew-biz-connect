@@ -15,19 +15,19 @@ const Hero = () => {
             NT Wholesales
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold leading-[1.1] text-foreground mb-6">
-            Commercial Coffee Distribution.{" "}
-            <span className="text-muted-foreground">Scaled for Excellence.</span>
+            Toys & Games Distribution.{" "}
+            <span className="text-muted-foreground">Bringing Fun to Every Shelf.</span>
           </h1>
           <p className="text-[15px] sm:text-base leading-relaxed text-muted-foreground max-w-xl mb-8">
-            Next-day wholesale delivery for UK hospitality groups, offices, and retailers.
-            Precision sourcing, consistent profiles, competitive bulk pricing.
+            Wholesale distribution of toys, board games, and family entertainment for UK retailers,
+            toy shops, and e-commerce sellers. Competitive bulk pricing with next-day delivery.
           </p>
           <div className="flex flex-wrap gap-3">
             <a
               href="mailto:info@ntwholesales.com"
               className="inline-flex items-center gap-2 h-11 px-7 rounded-full bg-primary text-primary-foreground text-sm font-semibold hover:opacity-90 transition-opacity"
             >
-              Request Wholesale Access
+              Request Trade Access
               <ArrowRight className="w-4 h-4" />
             </a>
             <a

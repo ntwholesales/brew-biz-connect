@@ -2,10 +2,10 @@ import { Truck, ShieldCheck, Clock, Package } from "lucide-react";
 import { motion } from "framer-motion";
 
 const features = [
-  { icon: Truck, title: "Next-Day Delivery", description: "UK-wide distribution with tracked logistics and reliable scheduling." },
-  { icon: ShieldCheck, title: "Quality Assured", description: "Sourced from certified producers with full traceability on every batch." },
-  { icon: Clock, title: "Flexible Scheduling", description: "Weekly, fortnightly, or custom delivery schedules to suit your operation." },
-  { icon: Package, title: "Bulk Pricing", description: "Competitive wholesale rates with volume-based discounts across all lines." },
+  { icon: Truck, title: "Next-Day Delivery", description: "UK-wide distribution with tracked logistics and reliable scheduling for all toy orders." },
+  { icon: ShieldCheck, title: "Safety Certified", description: "All products meet UK & EU safety standards with full compliance documentation." },
+  { icon: Clock, title: "Flexible Scheduling", description: "Weekly, fortnightly, or custom delivery schedules to keep your shelves stocked." },
+  { icon: Package, title: "Bulk Pricing", description: "Competitive wholesale rates with volume-based discounts across all toy and game lines." },
 ];
 
 const About = () => {
@@ -14,11 +14,11 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mb-16">
           <h2 className="text-2xl font-bold text-foreground leading-snug">
-            Built for Hospitality & Commercial Buyers
+            Built for Toy Shops & Retailers
           </h2>
           <p className="text-[15px] text-muted-foreground mt-3 leading-relaxed">
-            NT Wholesales supplies cafés, hotels, offices, and retail operations across the UK
-            with consistent, high-quality coffee products at wholesale prices. No middlemen, no markups.
+            NT Wholesales supplies toy shops, department stores, online sellers, and gift retailers across the UK
+            with the latest toys, games, and family entertainment at unbeatable wholesale prices.
           </p>
         </div>
 
